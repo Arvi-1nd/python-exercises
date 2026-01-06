@@ -39,3 +39,21 @@ for i in g:
     count += 1
 
 print(count)
+
+# 3 To find the minimum
+a = 5
+b = 4
+
+print(min(a,b))
+
+#using ternary
+
+result = a if a < b else b
+
+print(result)
+
+result3 = [a,b]
+
+result3.sort()
+
+print(result3[-1])
