@@ -23,3 +23,19 @@ result = [a,b]
 
 result.sort()
 print(result[-1])
+
+
+# 2 to find the length of the list
+
+g = [2,3,5,7]
+
+print(len(g))
+
+# using for loop
+
+count = 0
+
+for i in g:
+    count += 1
+
+print(count)
