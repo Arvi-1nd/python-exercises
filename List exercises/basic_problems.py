@@ -57,3 +57,49 @@ result3 = [a,b]
 result3.sort()
 
 print(result3[-1])
+
+# 4To interchange first and last element
+
+ki = [10,20,30,40,50]
+
+result = ki[-1:] + ki[1:-1] + ki[:1]
+
+print(result) 
+
+# using tuple
+
+pair = ki[-1],ki[0]
+
+ki[0],ki[-1] = pair
+
+print(ki)
+
+# 5 To check if a element is present
+
+rt = [3,6,2,9,7]
+
+flag = False
+
+val = 6
+
+for i in rt:
+    if val == i:
+        flag = True
+        break
+    
+if flag:
+    print("Element Exist")
+else:
+    print("Element does not exist")
+    
+    
+# using generator
+
+ty = [67,23,78,99]
+
+final = any(x == 30 for x in ty)
+
+if final:
+    print("Element exist")
+else:
+    print("Element does not exist")
