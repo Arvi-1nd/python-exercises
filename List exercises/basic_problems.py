@@ -103,3 +103,53 @@ if final:
     print("Element exist")
 else:
     print("Element does not exist")
+
+# Reversing a list
+
+# slicing
+
+re = [4,2,9,6,2]
+
+print(re[::-1])
+
+# using reverse
+jh = [4,2,1,3,9]
+
+jh.reverse()
+
+print(jh)
+
+# using while loop 
+
+op = [4,1,7,3,1]
+
+i,j = 0, len(op)-1
+
+while i < j:
+    op[i],op[j] = op[j],op[i]
+    i += 1
+    j -= 1
+    
+print(op)
+
+
+# cloning or copying a list
+
+ui = [4,6,7,8,9]
+# slicing creates a new list with same values
+kj = ui[:]
+
+print(kj)
+
+# using copy
+import copy
+
+ru = copy.copy(ui)
+print(ru)
+
+# using list comprehension
+
+lo = [x for x in ui]
+
+print(lo)
+
