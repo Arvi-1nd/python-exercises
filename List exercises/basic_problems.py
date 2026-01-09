@@ -104,7 +104,7 @@ if final:
 else:
     print("Element does not exist")
 
-# Reversing a list
+# 6 Reversing a list
 
 # slicing
 
@@ -133,7 +133,7 @@ while i < j:
 print(op)
 
 
-# cloning or copying a list
+# 7 cloning or copying a list
 
 ui = [4,6,7,8,9]
 # slicing creates a new list with same values
@@ -152,4 +152,32 @@ print(ru)
 lo = [x for x in ui]
 
 print(lo)
+
+# 8 Count Element in the list
+
+ret = [4,1,4,0]
+
+# using len function
+print(len(ret))
+
+# using for loop
+count = 0
+
+for i in ret:
+    count += 1
+    
+print(f"The length of the list is {count}")
+
+# 9 Sum and Average of list
+
+bu = [4,10,45,32]
+
+total_value = sum(bu)
+total_elements = len(bu)
+
+average = total_value / total_elements
+
+print(f"Total value : {total_value} and Average: {average}")
+
+
 
