@@ -23,3 +23,21 @@ req = list(filter(None, gi))
 
 print(req)
 
+# 2 reversing a tuple
+
+wer = (3,7,1,6,3,0)
+
+# using slicing
+print(wer[::-1])
+
+# using reversed returns an iterator
+
+hu = tuple(reversed(wer))
+
+print(hu)
+
+# using loop
+
+tr = tuple(wer[i] for i in range(len(wer)-1,-1,-1))
+
+print(tr)
