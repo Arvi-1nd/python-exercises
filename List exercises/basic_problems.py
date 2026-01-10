@@ -180,4 +180,40 @@ average = total_value / total_elements
 print(f"Total value : {total_value} and Average: {average}")
 
 
+# 10 To get sum of digits in list
 
+# using sum
+
+lp = [2,1,9,2,5,8]
+
+list_sum = sum(lp)
+
+print(list_sum)
+
+# using loop
+
+get_sum = 0
+
+for i in lp:
+    get_sum += i
+
+print(get_sum)
+
+# 11 Multiply all numbers in a list
+
+get_prod = 1
+
+# by using for loop
+
+for i in lp:
+    get_prod *= i
+
+print(get_prod)
+
+# using math
+
+import math
+
+just_prod = math.prod(lp)
+
+print(just_prod)
