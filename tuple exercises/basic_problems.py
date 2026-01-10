@@ -41,3 +41,40 @@ print(hu)
 tr = tuple(wer[i] for i in range(len(wer)-1,-1,-1))
 
 print(tr)
+
+# converting a list of tuples into dictionary
+
+#converting the data type
+re = [("a",1),("b",2),("c",3)]
+
+re = dict(re)
+
+print(re)
+
+# using dict comprehension
+er = [("x",5),("p",9),("u",3)]
+qw = {key:value for key, value in er}
+
+print(qw)
+
+# using for loop
+get_dict = {}
+
+for key, value in er:
+    get_dict[key] = value
+    
+print(get_dict)
+
+# count the number of occurences
+
+def count(tup,en):
+    return tup.count(en)
+
+tup = (10, 8, 5, 2, 10, 15, 10, 8, 5, 8, 8, 2)
+enq = 4
+enq1 = 10
+enq2 = 8
+
+print(count(tup,enq))
+print(count(tup,enq1))
+print(count(tup,enq2))
