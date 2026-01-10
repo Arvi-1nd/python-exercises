@@ -18,3 +18,43 @@ try:
     print(dic["japan"])
 except KeyError:
     print("not found")
+    
+# Python dictionary with keys having multiple inputs
+
+import random as rn
+
+dict = {}
+
+x, y, z = 10, 20, 30
+
+dict[x,y,z] = x + y - z
+
+x,y,z = 5,2,4
+
+dict[x,y,z] = x+ y - z
+
+print(dict)
+
+# Python program to find the sum of all items in a dictionary
+
+dt = {'a':100,'b':200,'c':400}
+# using sum
+
+fg = sum(dt.values())
+
+print(fg)
+
+# using list comrehension
+
+get_sum = sum([dt[v] for v in dt])
+
+print(get_sum)
+
+# using for loop
+
+total_sum = 0
+
+for i in dt.values():
+    total_sum += i
+
+print(total_sum)
