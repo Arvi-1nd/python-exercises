@@ -217,3 +217,37 @@ import math
 just_prod = math.prod(lp)
 
 print(just_prod)
+
+# smallest number in a List
+me = [8,5,2,9,6]
+
+min_value = me[0]
+
+for val in me:
+    if val < min_value:
+        min_value = val
+        
+print(min_value)
+
+# largest value in a list
+max_value = me[0]
+
+for val in me:
+    if val > max_value:
+        max_value = val
+        
+print(max_value)
+
+
+# second largest number
+
+max_value = second_max = float("-inf")
+
+for val in me:
+    if val > max_value:
+        second_max = max_value
+        max_value = val
+    elif val > second_max and val != max_value:
+        second_max = val
+        
+print(second_max)
