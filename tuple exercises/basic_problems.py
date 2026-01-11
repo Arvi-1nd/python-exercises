@@ -78,3 +78,16 @@ enq2 = 8
 print(count(tup,enq))
 print(count(tup,enq1))
 print(count(tup,enq2))
+
+#Python - Count the elements in a list until an element is a Tuple
+
+pl = [1, 2, 3, (4, 5), 6, 7]
+
+counting = 0
+
+for val in pl:
+    if  isinstance(val,tuple):
+        break
+    counting += 1
+    
+print(counting)
