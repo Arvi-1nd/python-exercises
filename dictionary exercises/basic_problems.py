@@ -58,3 +58,24 @@ for i in dt.values():
     total_sum += i
 
 print(total_sum)
+
+# size of dict
+
+import sys
+
+dp = {"a":1,"b":3,"c":4}
+
+res = sys.getsizeof(dp)
+
+print(res)
+
+# sorting by lambda
+
+dice = [
+    {"name": "Harry", "age": 20},
+    {"name": "Robin", "age": 20},
+    {"name": "Kevin", "age": 19}
+]
+
+print("sorted by age:")
+print(sorted(dice, key=lambda x: x["age"]))
