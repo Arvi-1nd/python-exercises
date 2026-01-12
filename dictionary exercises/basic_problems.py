@@ -79,3 +79,97 @@ dice = [
 
 print("sorted by age:")
 print(sorted(dice, key=lambda x: x["age"]))
+
+# merging two dictionaries
+
+d1 = {'x': 1, 'y': 2}
+d2 = {'y': 3, 'z': 4}
+
+d3 = d1 | d2
+print(d3)
+
+# Program to create grade calculator in Python
+
+ajay = {
+    "name": "ajay kumar",
+    "assignment": [80,60,30,10],
+    "test": [59,78],
+    "lab": [98, 56.89]
+}
+
+nikil = {
+    "name": "nikil babu",
+    "assignment": [50,45,30,20],
+    "test": [90,88],
+    "lab": [80.89, 78.89]
+}
+
+peter = {
+    "name": "peter paul",
+    "assignment": [25,66,38,76],
+    "test": [70.08,98.09],
+    "lab": [94.67, 97.89]
+}
+
+deva = {
+    "name": "deva raj",
+    "assignment": [90,96,67,30],
+    "test": [65.09,70.98],
+    "lab": [85.90, 45.89]
+}
+
+# This calculates the average
+
+def get_average(marks):
+   total_sum = sum(marks)
+   total_sum = float(total_sum)
+   return total_sum / len(marks)
+
+def calculate_total_average(students):
+    assignment = get_average(students["assignment"])
+    test = get_average(students["test"])
+    lab = get_average(students["lab"])
+    
+
+
+    return (0.1 * assignment +
+            0.7 * test + 0.2 * lab)
+    
+def assign_letter_grade(score):
+    if score >= 90:
+        return "A"
+    if score >= 80:
+        return "B"
+    if score >= 70:
+        return "C"
+    if score >= 60:
+        return "D"
+    else:
+        return "E"
+        
+        
+def class_average_is(students_list):
+    result_list = []
+    
+    for student in students_list:
+        stud_avg = calculate_total_average(student)
+        result_list.append(stud_avg)
+    return get_average(result_list)
+    
+students =[ajay,nikil,peter,deva]
+
+for student in students:
+    avg = calculate_total_average(student)
+
+    print(f"Student Name: {student['name']}")
+    print(f"Average Mark of {student['name']} is {avg:.2f}")
+    print(f"Letter grade of {student['name']} is {assign_letter_grade(avg)}")
+    print()
+
+    
+   
+class_av = class_average_is(students)
+
+print(f"Class average is {class_av}")
+print(f"Letter grade of class is {assign_letter_grade(class_av)}")
+ 

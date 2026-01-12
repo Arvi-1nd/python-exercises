@@ -291,4 +291,3 @@ print(tuple(oddy_nums))
 print(od_num)
 print(odd_nums)
 
-cd..
