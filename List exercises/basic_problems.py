@@ -251,3 +251,44 @@ for val in me:
         second_max = val
         
 print(second_max)
+
+# to get even numbers in a list
+
+mb = [7,4,29,36,44,31,8]
+# using filter
+
+even_num = filter(lambda x : x % 2 == 0, mb)
+print(tuple(even_num))
+
+#using loop
+
+even_nums = []
+
+for val in mb:
+    if val % 2 == 0:
+        even_nums.append(val)
+        
+print(even_nums)
+
+# using list comprehension
+
+eveen_nums = [val for val in mb if val % 2 == 0]
+print(eveen_nums)
+
+# odd numbers in list
+
+oddy_nums = filter(lambda x : x % 2 != 0, mb)
+
+odd_nums = [val for val in mb if val % 2 != 0]
+
+od_num = []
+
+for val in mb:
+    if val % 2 != 0:
+        od_num.append(val)
+        
+print(tuple(oddy_nums))
+print(od_num)
+print(odd_nums)
+
+cd..
