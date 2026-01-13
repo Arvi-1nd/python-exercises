@@ -291,3 +291,22 @@ print(tuple(oddy_nums))
 print(od_num)
 print(odd_nums)
 
+# counting even and odd numbers in a list
+
+mj = [9,2,5,8,45,12,87,4]
+
+e_num = list(filter(lambda x: x % 2 == 0, mj))
+o_num = list(filter(lambda x: x % 2 != 0, mj))
+
+print(e_num)
+print(o_num)
+
+# count positive and negative numbers in a list
+
+lk = [3,-8,9,-10,11,-14,59,-98]
+
+p_num = list(filter(lambda x : x > 0, lk ))
+n_num = list(filter(lambda x : x < 0, lk ))
+
+print(p_num)
+print(n_num)
