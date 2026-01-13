@@ -173,3 +173,10 @@ class_av = class_average_is(students)
 print(f"Class average is {class_av}")
 print(f"Letter grade of class is {assign_letter_grade(class_av)}")
  
+ 
+from collections import OrderedDict
+
+fill = OrderedDict([("a",1),("b",2)])
+fill.update({"c":3})
+fill.move_to_end("c", last=False)
+print(fill)
