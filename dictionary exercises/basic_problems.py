@@ -180,3 +180,52 @@ fill = OrderedDict([("a",1),("b",2)])
 fill.update({"c":3})
 fill.move_to_end("c", last=False)
 print(fill)
+
+# Check Order Of Character In String Using OrderedDict() - Python
+
+lm = 'engineers rock'
+lo = 'er'
+
+qw = OrderedDict()
+
+for i,h in enumerate(lm):
+    if h not in qw:
+        qw[h] = i
+        
+pos = -1
+
+for h in lo:
+    if h not in qw or qw[h] < pos:
+        print(False)
+        break
+    pos = qw[h]
+    
+else:
+    print(True)
+    
+# finding common elements in 3 sorted arrays
+
+# using three pointer
+
+def common_elements(ar1,ar2,ar3):
+    n1, n2, n3 = len(ar1), len(ar2), len(ar3)
+    i, j, k = 0, 0, 0
+    common = []
+    while i < n1 and j < n2 and k < n3:
+        if ar1[i] == ar2[j] == ar3[k]:
+            common.append(ar1[i])
+            i += 1
+            j += 1
+            k += 1
+        elif ar1[i] < ar2[j]:
+            i += 1
+        elif ar2[j] < ar2[k]:
+            j += 1
+        else:
+            k += 1
+    return common
+
+ar1 = [1, 5, 10, 20, 40, 80]
+ar2 = [6, 7, 20, 80, 100]
+ar3 = [3, 4, 15, 20, 30, 70, 80, 120]
+print(common_elements(ar1, ar2, ar3))
