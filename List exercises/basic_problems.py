@@ -310,3 +310,22 @@ n_num = list(filter(lambda x : x < 0, lk ))
 
 print(p_num)
 print(n_num)
+
+
+# Remove multiple elements ia list
+
+nm = [34,67,89,10]
+c = [100,34,10,56]
+
+for h in nm:
+    if h not in c:
+        print(h, sep=",")
+        
+# Remove empty tuples from the list
+
+kl = [(4,6),(),(5,9),(),(8,9)]
+
+jk = [t for t in kl if t]
+
+print(jk)
+
