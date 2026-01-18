@@ -329,3 +329,17 @@ jk = [t for t in kl if t]
 
 print(jk)
 
+# to print duplicates from a list of integers
+
+gh = [4,1,5,2,4,9,8,2]
+
+ll = set()
+dup_ele = []
+
+for ch in gh:
+    if ch in ll:
+        dup_ele.append(ch)
+    else:
+        ll.add(ch)
+        
+print(dup_ele)
