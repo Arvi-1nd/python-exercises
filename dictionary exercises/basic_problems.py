@@ -229,3 +229,28 @@ ar1 = [1, 5, 10, 20, 40, 80]
 ar2 = [6, 7, 20, 80, 100]
 ar3 = [3, 4, 15, 20, 30, 70, 80, 120]
 print(common_elements(ar1, ar2, ar3))
+
+
+# Key with Maximum Unique Values - Python
+
+dm = {"Gfg": [5, 7, 5, 4, 5], "is": [6, 7, 4, 3, 3], "Best": [9, 9, 6, 5, 5]}
+
+max_keys = max(dm, key= lambda k: len(set(dm[k])))
+
+print(max_keys)
+
+# Finding all the duplicate strings in python
+
+oj = "GeeksforGeeks"
+
+hn = {}
+pol = []
+
+for c in oj:
+    hn[c] = hn.get(c,0) + 1
+    
+for c , cnt in hn.items():
+    if cnt > 1:
+        pol.append(c)
+        
+print(pol)
