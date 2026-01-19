@@ -254,3 +254,16 @@ for c , cnt in hn.items():
         pol.append(c)
         
 print(pol)
+
+# Grouping elements together
+from collections import defaultdict
+
+iu = ["brinjal","grape","brinjal","grape","apple"]
+
+up = defaultdict(list)
+
+for char in iu:
+    up[char].append(char)
+    
+print(dict(up))
+
