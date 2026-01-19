@@ -343,3 +343,25 @@ for ch in gh:
         ll.add(ch)
         
 print(dup_ele)
+
+# Remove first element from List
+
+jg = ["p","k","h","t","o"]
+
+first_element = jg[0]
+
+for i in range(len(jg)-1):
+    if jg[i] == first_element:
+        del jg[i]
+print(jg)
+
+# we can also use del jg[0], pop(0) and jg[1:]
+
+
+# Remove duplicates from a list
+
+rw = [1,9,1,5,3,5,2,0,3]
+
+get_og = [x for x in set(rw)]
+
+print(get_og)
