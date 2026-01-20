@@ -365,3 +365,17 @@ rw = [1,9,1,5,3,5,2,0,3]
 get_og = [x for x in set(rw)]
 
 print(get_og)
+
+# Get unique element from list
+qo = [5,9,2,4,7,1,8,2,5,3,1,4]
+
+# Convert to set
+print(list(set(qo)))
+
+unique = set()
+# Using for loop
+for i in qo:
+    if i not in unique:
+        unique.add(i)
+
+print(list(unique))
