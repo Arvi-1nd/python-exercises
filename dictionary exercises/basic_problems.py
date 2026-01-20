@@ -265,5 +265,23 @@ up = defaultdict(list)
 for char in iu:
     up[char].append(char)
     
-print(dict(up))
+# print(dict(up))
+
+# K’th Non-repeating Character in Python
+
+from collections import Counter
+
+pfk = "geeksforgeeks"
+
+k = 3
+
+fg = Counter(pfk)
+
+wer = [ch for ch in pfk if fg[ch] == 1 ]
+
+print(wer[k-1] if k <= len(wer) else None)
+
+
+
+
 
