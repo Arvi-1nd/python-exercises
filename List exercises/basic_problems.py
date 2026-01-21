@@ -379,3 +379,35 @@ for i in qo:
         unique.add(i)
 
 print(list(unique))
+
+# Merging Two list
+
+zc = [0,4,2]
+mx = [5,7,3]
+# adding list
+merge_l1 = zc + mx
+print(merge_l1)
+# using extend
+zc.extend(mx)
+print(zc)
+# using loop
+
+for i in mx:
+    zc.append(i)
+
+print(zc)
+
+# iterate over a list
+
+cd = [1,2,3,4,5]
+
+# using for loop
+for val in cd:
+    print(val)
+
+# using while loop
+
+while i < len(cd):
+    print(cd[i])
+    i += 1
+
