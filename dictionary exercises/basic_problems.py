@@ -282,6 +282,48 @@ wer = [ch for ch in pfk if fg[ch] == 1 ]
 print(wer[k-1] if k <= len(wer) else None)
 
 
+given_list = ["Gfg", "is", "Best"]
+subs_dict = {"Gfg" : [5, 6, 7], "is" : [7, 4, 2]}
+
+print("orginal list", str(given_list))
+
+k = 0
+
+after_list = [ele if ele not in subs_dict else subs_dict[ele][k] for ele in given_list]
+
+print("After change", str(after_list))
+
+# Python - Ways to remove a key from dictionary
+
+# by pop
+
+bn = {"a":"pull","b":"push","c":"stop"}
+
+get_item = bn.pop("c")
+
+print(bn)
+print(get_item)
+
+# by del
+lz = {"r":"Red","b":"Blue","p":"pink"}
+del lz["p"]
+
+print(lz)
+
+# by pop item
+pv = {"name":"gary","age":34,"art":"painting"}
+
+yu = pv.pop("zinc","Key not found")
+
+print(pv)
+print(yu)
+
+# using pop itme to remove last keyword
+
+ng = {"wish":"Developer","area":"python"}
+last_item = ng.popitem()
+print(ng)
+print(last_item)
 
 
 
