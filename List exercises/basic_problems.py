@@ -411,3 +411,42 @@ while i < len(cd):
     print(cd[i])
     i += 1
 
+# Finding the average of the List
+
+lop = [3,1,6,4]
+
+total_sum = sum(lop)
+total_length = len(lop)
+
+average_lop = total_sum / total_length
+
+print(average_lop)
+
+# Append at beginning of List
+
+ji = [9,5,3,2]
+ji = [6] + ji
+
+print(ji)
+
+# Finding the common elements in Both List
+
+zd = [8,5,23,41,1,4,2,42,12,34,5,4,2,1]
+gp = [4,3,12,4,2,4,1,24,5,3,5,31,56,5]
+
+get_common = list(set(zd) & set(gp))
+
+print(get_common)
+
+get_com = list(set(zd).intersection(set(gp)))
+
+print(get_com)
+
+# get last element from the list
+
+wc = [9,4,5]
+
+get_last = wc[-1]
+getting_last = wc.pop()
+print(get_last)
+print(getting_last)
