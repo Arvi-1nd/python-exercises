@@ -318,12 +318,23 @@ yu = pv.pop("zinc","Key not found")
 print(pv)
 print(yu)
 
-# using pop itme to remove last keyword
+# using pop item to remove last keyword
 
 ng = {"wish":"Developer","area":"python"}
 last_item = ng.popitem()
 print(ng)
 print(last_item)
 
+# replacing the dictionary
+
+sip = "Hello, I am Awesome"
+
+r_dict = {"Hello":"Hi", "Awesome": "Developer"}
+
+
+for n_word,r_word in r_dict.items():
+    sip = sip.replace(n_word,r_word)
+
+print(sip)
 
 
