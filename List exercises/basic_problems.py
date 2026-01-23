@@ -450,3 +450,47 @@ get_last = wc[-1]
 getting_last = wc.pop()
 print(get_last)
 print(getting_last)
+
+
+# To remove none values from the list
+
+remove_None = [2,None,3,5,None,5]
+
+removed_none = [x for x in remove_None if x is not None]
+
+print(removed_none)
+
+# print common elements of both list
+
+first_list1 = [56,23,45,12,90]
+second_list1 = [54,89,76,32,45,23]
+
+getting_common = list(set(first_list1) & set(second_list1))
+
+print(getting_common)
+
+# Max and Min element's position in a List
+
+dummy_list = [87,98,43,78,23]
+
+max_num = min_num = dummy_list[0]
+
+for num in dummy_list:
+    if num > max_num:
+        max_num = num
+    
+    if num < min_num:
+        min_num = num
+    
+print(dummy_list.index(max_num))
+print(dummy_list.index(min_num))
+
+
+def Mx_min(nums):
+   max_num = nums.index(max(nums))
+   min_num = nums.index(min(nums))
+   return max_num, min_num
+
+nums3 = [56,23,90,53]
+
+print(Mx_min(nums3))
