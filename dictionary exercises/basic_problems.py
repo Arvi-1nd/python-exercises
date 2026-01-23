@@ -337,4 +337,19 @@ for n_word,r_word in r_dict.items():
 
 print(sip)
 
+# Remove Keywords
 
+
+b_dict = {"a":"apple","b":"green"}
+
+dict_compre = {k:v for k,v in b_dict.items() if k != "a"}
+
+print(dict_compre)
+
+# Removing duplicates
+
+x_dup = "Python is Python"
+x_dup1 = x_dup.split()
+x_dup3 = list(dic.fromkeys(x_dup1))
+res_dup = " ".join(x_dup3)
+print(res_dup)
