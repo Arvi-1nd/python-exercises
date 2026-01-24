@@ -353,3 +353,13 @@ x_dup1 = x_dup.split()
 x_dup3 = list(dic.fromkeys(x_dup1))
 res_dup = " ".join(x_dup3)
 print(res_dup)
+
+# Removing across
+dip = {'a': [1, 2, 3], 'b': [3, 4, 5], 'c': [5, 6]}
+
+flick = set()
+for key in dip:
+    dip[key] = [v for v in dip[key] if v  not in flick and not flick.add(v) ]
+
+print(dip)
+
