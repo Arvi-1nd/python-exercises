@@ -494,3 +494,18 @@ def Mx_min(nums):
 nums3 = [56,23,90,53]
 
 print(Mx_min(nums3))
+
+#Union of Two or more lists
+coins = [2,5,1,50,10,20]
+
+rupee_notes = [100,500,200,10,20]
+
+return_result = list(set(coins).union(rupee_notes))
+
+print(return_result)
+
+re_result = list(set(coins) | set(rupee_notes))
+
+print(re_result)
+
+
