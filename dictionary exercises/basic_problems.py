@@ -365,24 +365,49 @@ print(dip)
 
 # Python Dictionary to find mirror characters in a string
 
-def mirrorChars(input,k):
-    original = 'abcdefghijklmnopqrstuvwxyz'
-    reverse = 'zyxwvutsrqponmlkjihgfedcba'
+# def mirrorChars(input,k):
+#     original = 'abcdefghijklmnopqrstuvwxyz'
+#     reverse = 'zyxwvutsrqponmlkjihgfedcba'
     
-    dictchars = dict(zip(original,reverse))
+#     dictchars = dict(zip(original,reverse))
     
-    prefix = input[0:k-1]
-    suffix = input[k-1:]
-    mirror = ''
+#     prefix = input[0:k-1]
+#     suffix = input[k-1:]
+#     mirror = ''
     
-    for i in range(0,len(suffix)):
-        mirror = mirror + dictchars[suffix[i]]
-    print(prefix+mirror)
+#     for i in range(0,len(suffix)):
+#         mirror = mirror + dictchars[suffix[i]]
+#     print(prefix+mirror)
     
     
-input = "paradox"
-k = 4
+# input = "paradox"
+# k = 4
 
-print(mirrorChars(input,k))
+# print(mirrorChars(input,k))
     
-    
+# Counting the Frequencies in a List Using Dictionary in Python
+
+from collections import Counter
+glow = ['apple', 'banana', 'apple', 'orange', 'banana', 'banana']
+
+# co_freq = Counter(glow)
+
+# print(dict(co_freq))
+
+frequ = {}
+
+for item in glow:
+    frequ[item] = frequ.get(item,0) + 1
+
+print(frequ)
+
+# manually
+
+counts = {}
+
+for item in glow:
+    if item in counts:
+        counts[item] += 1
+    else:
+        counts[item] = 1
+print(counts)
