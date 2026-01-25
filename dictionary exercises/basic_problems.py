@@ -363,3 +363,26 @@ for key in dip:
 
 print(dip)
 
+# Python Dictionary to find mirror characters in a string
+
+def mirrorChars(input,k):
+    original = 'abcdefghijklmnopqrstuvwxyz'
+    reverse = 'zyxwvutsrqponmlkjihgfedcba'
+    
+    dictchars = dict(zip(original,reverse))
+    
+    prefix = input[0:k-1]
+    suffix = input[k-1:]
+    mirror = ''
+    
+    for i in range(0,len(suffix)):
+        mirror = mirror + dictchars[suffix[i]]
+    print(prefix+mirror)
+    
+    
+input = "paradox"
+k = 4
+
+print(mirrorChars(input,k))
+    
+    
