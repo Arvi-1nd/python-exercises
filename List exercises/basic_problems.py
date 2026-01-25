@@ -516,3 +516,20 @@ print(str(api))
 get_replacing = [sub.replace('i','-').replace("-","t").replace("g",'e') for sub in api]
 
 print(get_replacing)
+
+#Converting List to String
+list_str = ["A","N","S"]
+con_list_str = " ".join(list_str)
+
+print(con_list_str)
+
+#using loop
+
+loop_str = ""
+
+for ch in list_str:
+    loop_str += ch + ""    
+print(loop_str)
+
+
+
