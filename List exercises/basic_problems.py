@@ -508,4 +508,11 @@ re_result = list(set(coins) | set(rupee_notes))
 
 print(re_result)
 
+# Swap elements in a string list
 
+api = ['Gfg', 'is', 'best', 'for', 'Geeks']
+print(str(api))
+
+get_replacing = [sub.replace('i','-').replace("-","t").replace("g",'e') for sub in api]
+
+print(get_replacing)
