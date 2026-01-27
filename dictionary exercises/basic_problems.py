@@ -411,3 +411,26 @@ for item in glow:
     else:
         counts[item] = 1
 print(counts)
+
+# Python - Dictionary Values Mean
+
+#Brute force method
+test_dict = {"Gfg" : 4, "is" : 7, "Best" : 8, "for" : 6, "Geeks" : 10}
+
+og_dict = print(f"Thor original dictionary {str(test_dict)}")
+
+res = 0
+
+for val in test_dict.values():
+    res += val
+    
+res = res / len(test_dict)
+
+print(f"The Computed mean {str(res)}")
+
+#using numpy
+import numpy as np 
+
+numped_mean = np.mean(list(test_dict.values()))
+
+print(f"Mean is {numped_mean}")
