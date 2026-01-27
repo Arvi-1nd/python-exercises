@@ -531,5 +531,32 @@ for ch in list_str:
     loop_str += ch + ""    
 print(loop_str)
 
+# To separate even or odd in list
 
+a_arr = [5,12,75,34,21,68,31,96]
+
+e_num = []
+o_num = []
+# using normal for loop
+for val in a_arr:
+    if val % 2 == 0:
+        e_num.append(val)
+    else:
+        o_num.append(val)
+
+print(e_num)
+print(o_num)
+
+# using list comprehension
+div_num = [val for val in a_arr if val % 2 == 0]
+print(div_num)
+non_div = [val for val in a_arr if val % 2 != 0]
+print(non_div)
+
+#using lambda
+
+lam_even = list(filter(lambda x: x % 2== 0, a_arr))
+print(lam_even)
+lam_odd = list(filter(lambda x: x % 2 != 0, a_arr))
+print(lam_odd)
 
