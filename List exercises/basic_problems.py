@@ -600,3 +600,20 @@ for val in fill_list:
         
 print(second_element)
 
+
+# Python program to find the character position of Kth word from a list of strings
+
+sample_list = ["Python","is","great","for","beginners"]
+
+print(f"Original list {sample_list}")
+
+res = [ele[0] for sub in enumerate(sample_list) for ele in enumerate(sub[1])]
+
+k = 7
+res = res[k]
+
+print(f"The Position of kth value is {res}")
+
+
+    
+
