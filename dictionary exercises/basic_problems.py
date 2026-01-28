@@ -434,3 +434,27 @@ import numpy as np
 numped_mean = np.mean(list(test_dict.values()))
 
 print(f"Mean is {numped_mean}")
+
+# Python Counter and Dictionary Intersection Example (Make a string using deletion and rearrangement)
+
+from collections import Counter
+
+str1 = "hello"
+str2 = "goody"
+
+count1 = Counter(str1)
+count2  = Counter(str2)
+
+possible = True
+
+for val in count1:
+    if count1[val] > count2[val]:
+        possible = False
+        break
+    
+if possible:
+    print("True its Possible")
+else:
+    print("False its not possible")
+
+
