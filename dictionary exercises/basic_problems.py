@@ -458,3 +458,21 @@ else:
     print("False its not possible")
 
 
+# Python dictionary, set and counter to check if frequencies can become same
+
+from collections import Counter
+
+test_d = "cdnbcas"
+
+trans_dict = Counter(test_d)
+
+get_values = list(set(trans_dict.values()))
+
+if len(get_values) > 2:
+    print("No")
+elif len(get_values) == 2 and abs(get_values[1]-get_values[0]) > 1:
+    print("Yes")
+else:
+    print("Yes")
+    
+     
