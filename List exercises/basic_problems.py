@@ -560,3 +560,43 @@ print(lam_even)
 lam_odd = list(filter(lambda x: x % 2 != 0, a_arr))
 print(lam_odd)
 
+#Reversing all the strings in the list
+
+# using loop
+soaps = ['hamam','pears','dove','lifebuoy','cinthol']
+
+resullt = []
+
+for soap in soaps:
+    resullt.append(soap[::-1])
+    
+print(resullt)
+
+# using list compre
+
+reverse_string = [soap[::-1] for soap in soaps]
+
+print(reverse_string)
+
+
+# using lambda
+
+rev_str = list(map(lambda soap: soap[::-1], soaps))
+
+print(rev_str)
+
+# To find the second largest element
+
+fill_list = [2,5,1,6,3,8,30,20,54,32,11,14,8]
+
+max_element = second_element = float('-inf')
+
+for val in fill_list:
+    if val > max_element:
+        second_element = max_element
+        max_element = val
+    elif val > second_element and val != max_element:
+        second_element = val
+        
+print(second_element)
+
