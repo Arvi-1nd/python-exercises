@@ -474,5 +474,13 @@ elif len(get_values) == 2 and abs(get_values[1]-get_values[0]) > 1:
     print("Yes")
 else:
     print("Yes")
-    
-     
+
+
+d = ["go", "bat", "me", "eat", "goal", "boy", "run"]
+ch = ['e', 'o', 'b', 'a', 'm', 'g', 'l']
+
+c3 = set(ch)
+
+out = [w for w in d if set(w).issubset(c3)]
+
+print(out)
