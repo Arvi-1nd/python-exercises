@@ -616,4 +616,15 @@ print(f"The Position of kth value is {res}")
 
 
     
+filliers = ["Kite", "Apple", "King", "Banana", "Kangaroo", "cat"]
 
+j = "B"
+
+getting_k = []
+
+for word in filliers:
+    if word.startswith(j):
+        getting_k.append(word)
+        
+print(getting_k)
+        
