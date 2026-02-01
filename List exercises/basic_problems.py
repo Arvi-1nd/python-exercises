@@ -628,3 +628,13 @@ for word in filliers:
         
 print(getting_k)
         
+
+bring_list = ["python","is","amazing","learn","python"]
+
+prefix = "python"
+count_pre = 0
+for word in bring_list:
+    if word.startswith(prefix):
+        count_pre += 1
+        
+print(f"The {prefix} appears {count_pre} times in the list")
