@@ -484,3 +484,13 @@ c3 = set(ch)
 out = [w for w in d if set(w).issubset(c3)]
 
 print(out)
+
+
+file_check = ["go","get","fill","temp","you"]
+
+jh = ['o','g','f','e','i','p','t']
+
+jhh = set(jh)
+form_words = [word for word in  file_check if set(jh).issubset(jhh) ]
+
+print(form_words)
