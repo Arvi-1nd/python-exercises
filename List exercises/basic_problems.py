@@ -638,3 +638,14 @@ for word in bring_list:
         count_pre += 1
         
 print(f"The {prefix} appears {count_pre} times in the list")
+
+# splitting the words in list
+
+eternal = ["flame","water","earth","sky","wind"]
+
+res = []
+for word in eternal:
+    split_word = word.split()
+    res.append(split_word)
+    
+print(res)
