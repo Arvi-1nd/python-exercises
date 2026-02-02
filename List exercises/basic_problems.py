@@ -649,3 +649,23 @@ for word in eternal:
     res.append(split_word)
     
 print(res)
+
+# max value record key
+
+test_dicty = {'gfg' : {'Manjeet' : 5, 'Himani' : 10},
+             'is' : {'Manjeet' : 8, 'Himani' : 9},
+             'best' : {'Manjeet' : 10, 'Himani' : 15}}
+
+print(f"Original dict {test_dicty}")
+
+key = "Himani"
+res = None
+res_max = 0
+
+for sub in test_dicty:
+    if test_dicty[sub][key] > res_max:
+        res_max = test_dicty[sub][key]
+        res = sub
+        
+        
+print(f"The required key {str(res)}")
