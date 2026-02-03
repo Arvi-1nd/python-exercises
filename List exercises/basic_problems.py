@@ -669,3 +669,26 @@ for sub in test_dicty:
         
         
 print(f"The required key {str(res)}")
+
+
+# Prefix value
+
+original_list =  ["geeksforgeeks", "best", "geeks", "and", "geeks", "love", "CS"]
+
+print(f"Original string {str(original_list)}")
+
+pfix = "geek"
+res = []
+
+for val in original_list:
+    if val.startswith(pfix):
+        res.append([val])
+        
+    else:
+       res[-1].append(val)
+       
+       
+print(f"Prefix split list {str(res)}")
+
+
+
