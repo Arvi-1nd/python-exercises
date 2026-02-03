@@ -494,3 +494,23 @@ jhh = set(jh)
 form_words = [word for word in  file_check if set(jh).issubset(jhh) ]
 
 print(form_words)
+
+dill = {'a': 1,'b': {'a': 2, 'c': 3},'d': [{'a': 4}, {'a': 5}]}
+keys = 'a'
+si = [d]
+valuess = []
+
+while si:
+    c = si.pop()
+    if isinstance(c, dict):
+        for k,v in c.items():
+            if k == keys:
+                valuess.append(v)
+            elif isinstance(v, (dict,list)):
+                si.append(v)
+                
+    elif isinstance(c, list):
+        si.extend(c)
+        
+print(valuess)
+    
