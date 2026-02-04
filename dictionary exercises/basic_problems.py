@@ -495,22 +495,31 @@ form_words = [word for word in  file_check if set(jh).issubset(jhh) ]
 
 print(form_words)
 
-dill = {'a': 1,'b': {'a': 2, 'c': 3},'d': [{'a': 4}, {'a': 5}]}
-keys = 'a'
-si = [d]
-valuess = []
+# dill = {'a': 1,'b': {'a': 2, 'c': 3},'d': [{'a': 4}, {'a': 5}]}
+# keys = 'a'
+# si = [d]
+# valuess = []
 
-while si:
-    c = si.pop()
-    if isinstance(c, dict):
-        for k,v in c.items():
-            if k == keys:
-                valuess.append(v)
-            elif isinstance(v, (dict,list)):
-                si.append(v)
+# while si:
+#     c = si.pop()
+#     if isinstance(c, dict):
+#         for k,v in c.items():
+#             if k == keys:
+#                 valuess.append(v)
+#             elif isinstance(v, (dict,list)):
+#                 si.append(v)
                 
-    elif isinstance(c, list):
-        si.extend(c)
+#     elif isinstance(c, list):
+#         si.extend(c)
         
-print(valuess)
-    
+# print(valuess)
+
+
+# Convert list of list of dictionaries
+
+a_list = ["name","age","city"]
+b_list = [["jack",56,"tiruppur"],["neil",24,"kovai"],["chirst",32,"trichy"],["ken",36,"karur"],["jane",26,"madurai"]]
+
+ans = [dict(zip(a_list,val)) for val in b_list]
+
+print(ans)
