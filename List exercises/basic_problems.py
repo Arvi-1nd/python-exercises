@@ -691,4 +691,24 @@ for val in original_list:
 print(f"Prefix split list {str(res)}")
 
 
+list_check = ['gfg', 'is', 'best', 'for', 'geeks']
 
+# List of characters to check for
+remove_chars = ['g', 'e']
+
+
+get_chars = []
+
+
+for word in list_check:
+    if not any(char  in word for char in remove_chars):
+        get_chars.append(word)
+        
+print(get_chars)
+        
+        
+# we can write the above shortly 
+
+getchars1= [word for word in list_check if not any(char in word for char in remove_chars)]
+
+print(getchars1)
