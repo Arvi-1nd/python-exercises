@@ -712,3 +712,11 @@ print(get_chars)
 getchars1= [word for word in list_check if not any(char in word for char in remove_chars)]
 
 print(getchars1)
+
+# Convert list
+
+li = ["Hello   world", "   Python is  great  ", "   Extra  spaces here  "]
+
+return_string = [" ".join(string.split()) for string in li]
+
+print(return_string)
