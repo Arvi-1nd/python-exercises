@@ -523,3 +523,11 @@ b_list = [["jack",56,"tiruppur"],["neil",24,"kovai"],["chirst",32,"trichy"],["ke
 ans = [dict(zip(a_list,val)) for val in b_list]
 
 print(ans)
+
+# List of list
+
+pairs = [["a", 1], ["b", 2], ["c", 3]]
+
+getlist = {k: value for key , value in pairs}
+
+print(getlist)
