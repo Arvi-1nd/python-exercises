@@ -520,9 +520,9 @@ print(form_words)
 a_list = ["name","age","city"]
 b_list = [["jack",56,"tiruppur"],["neil",24,"kovai"],["chirst",32,"trichy"],["ken",36,"karur"],["jane",26,"madurai"]]
 
-ans = [dict(zip(a_list,val)) for val in b_list]
+# ans = [dict(zip(a_list,val)) for val in b_list]
 
-print(ans)
+# print(ans)
 
 # List of list
 
@@ -531,3 +531,18 @@ pairs = [["a", 1], ["b", 2], ["c", 3]]
 getlist = {k: value for key , value in pairs}
 
 print(getlist)
+
+# Converting list of tuples to dict
+
+sample_list = [("x",1),("y",2),("z",3)]
+
+get_tup = {key: value for key,value in sample_list}
+
+print(get_tup)
+
+getting_tup = {}
+
+for key, value in sample_list:
+    getting_tup[key] = value
+    
+print(getting_tup)
