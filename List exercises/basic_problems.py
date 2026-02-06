@@ -720,3 +720,23 @@ li = ["Hello   world", "   Python is  great  ", "   Extra  spaces here  "]
 return_string = [" ".join(string.split()) for string in li]
 
 print(return_string)
+
+run_list = ["pythisbest","pytoautomate","pythonwebdev"]
+
+print(f"The original list {run_list}")
+
+rest = []
+
+for ele in run_list:
+    temp = [[]]
+    for char in ele:
+        
+        if char.isupper():
+            temp.append([])
+            
+        temp[-1].append(char)
+        
+    rest.append(' '.join(''.join(ele) for ele in temp))
+    
+    
+print(f"The space added list of strings: {str(rest)}")
