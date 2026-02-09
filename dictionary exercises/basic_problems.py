@@ -546,3 +546,12 @@ for key, value in sample_list:
     getting_tup[key] = value
     
 print(getting_tup)
+
+
+# Converting string to dictionary
+
+simple = "{'a' : 2, 'c' : 5, 'b' : 6}"
+
+str_con = eval(simple)
+
+print(str_con)
