@@ -740,3 +740,12 @@ for ele in run_list:
     
     
 print(f"The space added list of strings: {str(rest)}")
+
+
+# To character matrix to string
+
+matrix = [['g', 'f', 'g'], ['i', 's'], ['b', 'e', 's', 't']]
+
+showing_mat = ''.join([''.join(sublist) for sublist in matrix])
+
+print(showing_mat)
