@@ -772,3 +772,17 @@ for ele1,ele2 in zip(test_list1,test_list2):
         res.append(ele1)
         
 print(f"The extracted list {res}")
+
+
+# Filtering out the retain char 
+
+brim_list = ["G","P","Q","R","S","T","l","M","O","E"]
+
+repl_char = "$"
+
+ret_char = "G"
+
+
+replace_result = [ele if ele == ret_char   else repl_char for ele in brim_list]
+
+print(replace_result)
