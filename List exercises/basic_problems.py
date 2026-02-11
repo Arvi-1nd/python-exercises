@@ -749,3 +749,26 @@ matrix = [['g', 'f', 'g'], ['i', 's'], ['b', 'e', 's', 't']]
 showing_mat = ''.join([''.join(sublist) for sublist in matrix])
 
 print(showing_mat)
+
+# Chcking substring
+
+test_list1 = ["Gfg", "is", "not", "best", "and",
+              "not", "for", "CS"]
+test_list2 = ["Its ok", "all ok", "wrong", "looks ok",
+              "ok", "wrong", "ok", "thats ok"]
+
+
+print(f"Original list 1: {test_list1}")
+print(f"Original list 2: {test_list2}")
+
+
+sub_str = "ok"
+
+
+res = []
+
+for ele1,ele2 in zip(test_list1,test_list2):
+    if sub_str in ele2:
+        res.append(ele1)
+        
+print(f"The extracted list {res}")
