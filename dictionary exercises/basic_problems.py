@@ -555,3 +555,12 @@ simple = "{'a' : 2, 'c' : 5, 'b' : 6}"
 str_con = eval(simple)
 
 print(str_con)
+
+
+# dict
+
+lid = [[5, 6, 7], [8, 3, 2], [8, 2, 1]]
+
+get_lid = {idx + 1: val for idx, val in enumerate(lid) }
+
+print(get_lid)
