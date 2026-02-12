@@ -564,3 +564,22 @@ lid = [[5, 6, 7], [8, 3, 2], [8, 2, 1]]
 get_lid = {idx + 1: val for idx, val in enumerate(lid) }
 
 print(get_lid)
+
+
+# creating nested dict
+
+ael = {'Gfg': 4, 'is': 5, 'best': 9}
+bel = [8, 3, 2]
+
+# using zip
+res = {}
+for key,(k, v) in zip(bel,ael.items()):
+    res[key] = {k:v}
+
+print(res)
+
+# using list comprehension
+
+nest_dict = {key : {k:v} for key, (k,v) in zip(bel,ael.items())}
+
+print(nest_dict)
