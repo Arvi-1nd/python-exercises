@@ -786,3 +786,17 @@ ret_char = "G"
 replace_result = [ele if ele == ret_char   else repl_char for ele in brim_list]
 
 print(replace_result)
+
+# Converting all Strings in a List to Integers - Python
+
+simple_list = ["2","7","3","4","1","6","5","9"]
+
+# using map
+
+map_list = list(map(int, simple_list))
+print(map_list)
+
+# using list compre
+
+comp_list = [int(item) for item in simple_list ]
+print(comp_list)
